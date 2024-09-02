@@ -1,0 +1,456 @@
+html {
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+body {
+    margin:0;
+    padding:0;
+  }
+
+.contenedor-header{
+    background: linear-gradient(to top, rgba(165, 18, 94, 0.8), rgba(165, 18, 94, 0.8));
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width:1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Caveat';
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #ffffff;
+    margin: 0 20px;
+    padding: 7px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #760a6d;
+}
+
+.nav-responsive{
+    background-color: #5ea5cf;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.inicio{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(img/fondo4.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+
+.inicio .contenido-banner{
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+
+.titulo-inicio{
+    padding-top: 150px; 
+    margin-bottom: 50px;
+    font-size: 90px;
+    font-weight: 700px;
+    font-family: 'Caveat';
+    color: #ff0ecb;
+}
+
+.subtitulo {
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: #000000;
+    font-family: 'Caveat';
+}
+
+    /*}galeria de imagen*/
+
+.galeria{
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url(img/fondo4.jpg) no-repeat center;
+        background-size: cover;
+        background-position: center center;
+        max-width: 1100PX;
+    }
+
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .galeria{
+        font-family: 'open sans';
+    }
+    
+    .galeria h1{
+        text-align: center;
+        margin:20px 0 15px 0;
+        font-weight: 300;
+    }
+    
+    .linea{
+        border-top: 5px solid #0077C0;
+        margin-bottom: 40px;
+    }
+    
+    .contenedor-imagenes{
+        display:flex;
+        width: 85%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius:3px;
+    }
+    
+    .contenedor-imagenes .imagen{
+        width: 32%;
+        position: relative;
+        height:250px;
+        margin-bottom:5px;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+    }
+    .imagen img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    
+    
+    @media screen and (max-width:1000px){
+        .contenedor-imagenes{
+            width: 95%;
+        }
+    }
+    
+    @media screen and (max-width:700px){
+        .contenedor-imagenes{
+            width: 90%;
+        }
+        .contenedor-imagenes .imagen{
+            width: 48%;
+        }
+    }
+    
+    @media screen and (max-width:450px){
+        h1{
+            font-size:22px;
+        }
+        .contenedor-imagenes{
+            width: 98%;
+        }
+        .contenedor-imagenes .imagen{
+            width: 80%;
+        }
+    }
+
+/* sobre nosotros */
+
+.quienessomos{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url(img/fondo3.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center center;
+
+    
+
+}
+.quienessomos .sobrenosotros{
+    max-width: 1100px;
+    margin:0;
+    padding:0;
+    margin: auto;
+    text-align: left;
+}
+
+.titulosomos {
+    padding-top: 0; 
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: 'Caveat';
+    color: #007483;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.descripcionsomos {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: justify;
+    color: #000000;
+    font-family: 'caveat';
+    margin-right: 100px;
+}
+
+.descripcionsomos2 {
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: justify;
+    color: #000000;
+    font-family: 'caveat';
+    margin-right: 100px;
+}
+
+.imgdis1 {
+    float: right;
+    width: 400px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+/* servicios */
+
+.servicios{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url(img/fondo5.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.servicios .servicio{
+    max-width: 1100px;
+    margin: auto;
+    padding:0;
+    margin: auto;
+    text-align: left;
+}
+
+.titservicio {
+    padding-top: 0; 
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: 'Caveat';
+    color: #ff0ecb;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.descservicio {
+    padding-top: 0; 
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: 'Caveat';
+    color: #000000;
+    padding: 50px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.galeria{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:7px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.textoga{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(235, 4, 189, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.textoga h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .textoga{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+
+
+
+/*:::::Pie de Pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #1c0a1d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #330d2b;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #2a0a21;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
+
+
+

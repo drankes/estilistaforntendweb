@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BERESTUDIO</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- MENU Y ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ESTUDIOBERE</a>
+            </div>
+            <nav id="navegacion">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#galeria" onclick="seleccionar()">Mis trabajos</a></li>
+                    <li><a href="#quienessomos" onclick="seleccionar()">Quienes Somos</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()">servicios</a></li>
+                    <li><a href="#contact" onclick="seleccionar()">contacto</a></li>
+
+                </ul>
+            </nav>
+                    <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+        </header>
+    </div>
+    
+     <!-- Seccion de inicio -->
+     <SECtion id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <h1 class="titulo-inicio">ESTUDIOBERE<h1>
+            <p class="subtitulo">
+                Bienvenido(a) a ESTUDIOBERE 
+            </p>
+        </div> 
+     </SECtion>
+
+     <div id="galeria" class="galeria">
+        <div class="linea"></div>
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="imggaler/1.jpg" alt="">
+            </div>
+            <div class="imagen">
+                <img src="imggaler/2.jpg" alt="">
+            </div>
+            <div class="imagen">
+                <img src="imggaler/3.jpg" alt="">
+            </div>
+            <div class="imagen">
+                <img src="imggaler/4.jpg" alt="">
+            </div>
+            <div class="imagen">
+                <img src="imggaler/5.jpg" alt="">
+            </div>
+            <div class="imagen">
+                <img src="imggaler/6.jpg" alt="">
+            </div>
+            <div class="imagen">
+                <img src="imgservicios/laminadodecejas.jpeg" alt="">
+            </div>
+            <div class="imagen">
+                <img src="imgservicios/rizadodepestañas.jpeg" alt="">
+
+            </div>
+            <div class="imagen">
+                <img src="imggaler/8.jpg" alt="">
+                <div class="textgale">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Seccion de sobre nosotros -->
+     <section id="quienessomos" class="quienessomos">
+        <div class="sobrenosotros">
+
+            <h1 class="titulosomos">QUIENES SOMOS</h1>
+            <img src="img/imgdis1.jpeg" class="imgdis1">
+            <P class="descripcionsomos">
+                    Bienvenido a EstudioBere, donde la elegancia y la creatividad se unen para resaltar la belleza de tus manos. 
+                    En nuestro estudio, nos dedicamos a proporcionar servicios de uñas excepcionales en un ambiente acogedor y relajante.
+                    Ven y sumérgete en la experiencia EstudioBere, donde tus uñas recibirán el tratamiento que se merecen. Estamos comprometidos con la excelencia y la satisfacción del cliente, creando un ambiente donde la belleza y la confianza se fusionan de manera armoniosa. ¡Haz una cita con nosotros y descubre cómo podemos realzar la belleza natural de tus uñas en EstudioBere!
+            </P>
+            <p class="descripcionsomos2">
+                Nuestro objetivo en EstudioBere es ofrecer tratamientos de uñas de alta calidad que no solo embellezcan tus manos, sino que también reflejen tu individualidad.
+                     Desde manicuras clásicas hasta diseños de uñas vanguardistas, nuestro equipo capacitado y apasionado está listo para satisfacer todas tus necesidades de cuidado de uñas.
+                     
+            </p>
+        </div>
+     </section>
+
+     <!-- Seccion de servicios -->
+     <section id="servicios" class="servicios"> 
+        <div id="servicio" class="servicio">
+            <h1 class="titservicio">SERVICIOS</h1>
+            <P class="descservicio">Ofrecemos los siguientes tipos de servicios</P>
+        </div>
+        
+        <div class="galeria">
+            <div class="contenedor-imagenes">
+                <div class="imagen">
+                    <img src="imgservicios/laminadodecejas.jpeg" alt="">
+                    <div class="textoga">
+                        <h2>LAMINADO DE CEJAS</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imgservicios/manicure.jpeg" alt="">
+                    <div class="textoga">
+                        <h2>MANICURE</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imgservicios/pedicureyacripie.jpeg" alt="">
+                    <div class="textoga">
+                        <h2>PEDICURE Y CRIPIE</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imgservicios/rizadodepestañas.jpeg" alt="">
+                    <div class="textoga">
+                        <h2>RIZADO DE PESTAÑAS</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="imgservicios/uñas.jpeg" alt="">
+                    <div class="textoga">
+                        <h2>UÑAS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+ <!-- SECCION CONTACTO -->
+ <footer id="contact" class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="img/fondologo.jpg" alt="Logo de SLee Dw">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>CONTACO Y UBICACION</h2>
+            <p>Numero telefonico: 55-34-69-43-89</p>
+            <p>Ubicacion del local : Tapachula, Chiapas central oriente #43 entre 7a sur y 9a sur</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/profile.php?id=100089617844330" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/studibere/?fbclid=IwAR3WwnamUcbwEw7BRyM3WSjZ5OExDBYaMZQ2iXmUMCYmCPb5Dx0JnUwZ3vU" target="_blank" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; ESTUDIOBERE</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
